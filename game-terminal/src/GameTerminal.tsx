@@ -20,6 +20,12 @@ const games: Game[] = [
     name: 'Flappy Bird',
     description: 'Learn CS coding concepts on the fly!',
     path: 'http://localhost:8080'
+  },
+  {
+    id: 'datastructquest',
+    name: 'DataStruct Quest',
+    description: 'Solve interactive data structure puzzles and challenges!',
+    path: 'http://localhost:5175'
   }
 ];
 

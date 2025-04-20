@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# Kill any existing processes on ports 5173, 5174, and 8080
-echo "Checking for existing processes on ports 5173, 5174, and 8080..."
+# Kill any existing processes on ports 5173, 5174, 5175, and 8080
+echo "Checking for existing processes on ports 5173, 5174, 5175, and 8080..."
 lsof -ti:5173 | xargs kill -9 2>/dev/null || true
 lsof -ti:5174 | xargs kill -9 2>/dev/null || true
+lsof -ti:5175 | xargs kill -9 2>/dev/null || true
 lsof -ti:8080 | xargs kill -9 2>/dev/null || true
 
 # Start Cyber Catcher on port 5174
@@ -18,7 +19,13 @@ cd ../Flappy-Bird
 http-server -p 8080 &
 FLAPPY_BIRD_PID=$!
 
-# Wait a moment for the first servers to initialize
+# Start DataStruct Quest on port 5175
+echo "Starting DataStruct Quest server on port 5175..."
+cd ../DataStruct-Quest
+npm run dev -- --port 5175 &
+DATASTRUCT_QUEST_PID=$!
+
+# Wait a moment for the servers to initialize
 sleep 3
 
 # Start Game Terminal on port 5173
@@ -32,6 +39,7 @@ cleanup() {
   echo "Shutting down servers..."
   kill $CYBER_CATCHER_PID 2>/dev/null || true
   kill $FLAPPY_BIRD_PID 2>/dev/null || true
+  kill $DATASTRUCT_QUEST_PID 2>/dev/null || true
   kill $GAME_TERMINAL_PID 2>/dev/null || true
   exit 0
 }
