@@ -1,6 +1,6 @@
-# Game Terminal
+# cmd-play
 
-A terminal-style game launcher for educational games, designed for the Desert CodeSprouts workshop at ASU SCAI.
+A terminal-style game launcher for educational games. Project name: cmd-play.
 
 ## Overview
 

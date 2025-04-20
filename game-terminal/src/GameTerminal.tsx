@@ -37,7 +37,11 @@ const games: Game[] = [
 
 const GameTerminal: React.FC = () => {
   const [selectedGame, setSelectedGame] = useState<string | null>(null);
-  const [commandHistory, setCommandHistory] = useState<string[]>(['Last updated: ' + new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString()]);
+  const [commandHistory, setCommandHistory] = useState<string[]>([
+    'Welcome to cmd-play!',
+    "Type 'help' for commands.",
+    'Last updated: ' + new Date().toLocaleDateString() + ' ' + new Date().toLocaleTimeString()
+  ]);
   const [inputValue, setInputValue] = useState<string>('');
 
   const handleCommand = (command: string) => {

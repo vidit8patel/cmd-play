@@ -1,5 +1,5 @@
 {
-  "name": "game-terminal",
+  "name": "cmd-play",
   "version": "1.0.0",
   "description": "Terminal-style game launcher for educational games",
   "main": "index.js",
