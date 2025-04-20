@@ -8,7 +8,7 @@ export default defineConfig({
     strictPort: true,
     open: true
   },
-  base: './',
+  base: '/',
   build: {
     outDir: 'dist',
     emptyOutDir: true
