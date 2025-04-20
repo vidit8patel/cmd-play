@@ -3,6 +3,8 @@
 A retro terminal-inspired arcade for educational games!
 
 Deployed Link : https://cmd-play-fo13.vercel.app/
+PPT : https://www.canva.com/design/DAGlJmxNq-0/Wo2o85-RFYjPMxT2cYRCxA/view?utm_content=DAGlJmxNq-0&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h1af352a9e6
+
 
 ## Overview
 
