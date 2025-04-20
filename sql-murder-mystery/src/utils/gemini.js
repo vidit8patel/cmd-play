@@ -13,7 +13,7 @@ function mapGeminiToGame(mystery) {
 }
 
 export async function fetchGeminiMystery() {
-  const url = 'http://localhost:5001/api/gemini';
+  const url = '/api/gemini';
 
   const prompt = `You are an AI game master creating an interactive  mystery game for middle and high school students. Generate a new, original mystery each time with:\n\n1. A catchy, suspenseful story intro (max 120 words)\n2. 4-6 suspects (name, occupation, 1-sentence personality)\n3. 3-5 SQL challenges, each with:\n   - A clue description\n   - A partially-completed SQL query (with blanks)\n   - The correct answer (full query)\n   - A hint\n   - The SQL concept taught\n   - Expected output description\n4. A dramatic case conclusion (reveal murderer, how evidence led to them, and a congratulatory remark)\n\nRespond in JSON with keys: intro, suspects, challenges, conclusion. Make it age-appropriate, fun, and logical!`;
 
