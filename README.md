@@ -2,6 +2,8 @@
 
 A retro terminal-inspired arcade for educational games!
 
+Deployed Link : https://cmd-play-fo13.vercel.app/
+
 ## Overview
 
 **cmd-play** is a unified hackathon project featuring a terminal-style launcher and a suite of interactive games for learning programming, cybersecurity, and problem-solving. Inspired by classic terminals, it brings together fun, education, and nostalgia in one place.
