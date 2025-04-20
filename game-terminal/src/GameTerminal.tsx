@@ -29,7 +29,7 @@ const games: Game[] = [
   },
   {
     id: 'sqlmurder',
-    name: 'SQL Murder Mystery',
+    name: 'Database Detective',
     description: 'Solve a murder mystery using SQL queries! Interact with a simulated database and uncover clues.',
     path: 'http://localhost:5176'
   }
