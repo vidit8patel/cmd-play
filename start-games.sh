@@ -12,11 +12,11 @@ cd cyber-catcher-vite
 npm run dev -- --port 5174 &
 CYBER_CATCHER_PID=$!
 
-# Start Flappy Bird React on port 8080
-echo "Starting Flappy Bird React server on port 8080..."
-cd ../flappy-bird-react
-npm run dev -- --port 8080 &
-FLAPPY_BIRD_REACT_PID=$!
+# Start Flappy Bird on port 8080
+echo "Starting Flappy Bird server on port 8080..."
+cd ../Flappy-Bird
+http-server -p 8080 &
+FLAPPY_BIRD_PID=$!
 
 # Wait a moment for the first servers to initialize
 sleep 3
@@ -31,7 +31,7 @@ GAME_TERMINAL_PID=$!
 cleanup() {
   echo "Shutting down servers..."
   kill $CYBER_CATCHER_PID 2>/dev/null || true
-  kill $FLAPPY_BIRD_REACT_PID 2>/dev/null || true
+  kill $FLAPPY_BIRD_PID 2>/dev/null || true
   kill $GAME_TERMINAL_PID 2>/dev/null || true
   exit 0
 }
