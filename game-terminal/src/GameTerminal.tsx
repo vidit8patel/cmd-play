@@ -26,6 +26,12 @@ const games: Game[] = [
     name: 'DataStruct Quest',
     description: 'Solve interactive data structure puzzles and challenges!',
     path: 'http://localhost:5175'
+  },
+  {
+    id: 'sqlmurder',
+    name: 'SQL Murder Mystery',
+    description: 'Solve a murder mystery using SQL queries! Interact with a simulated database and uncover clues.',
+    path: 'http://localhost:5176'
   }
 ];
 

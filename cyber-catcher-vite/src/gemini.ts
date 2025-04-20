@@ -1,7 +1,7 @@
 // @ts-ignore
 import { GoogleGenAI } from "@google/genai";
 
-const API_KEY = "AIzaSyDlDWHgNqZNLydEBHOmOjz105TunaZ1GjE"; // <-- Replace with your Gemini API key
+const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
