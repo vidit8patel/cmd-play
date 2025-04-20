@@ -1,0 +1,77 @@
+.intro-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(10, 10, 20, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.8s;
+}
+
+.intro-modal {
+  background: #22223b;
+  border: 3px solid #ff3e3e;
+  border-radius: 10px;
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 520px;
+  color: #fff;
+  box-shadow: 0 0 40px #000a, 0 0 0 6px #1a1a1a;
+  font-family: 'Press Start 2P', monospace;
+  text-align: left;
+  position: relative;
+}
+
+.intro-modal h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ff3e3e;
+  text-shadow: 2px 2px 0 #000, 0 0 10px #ff3e3e66;
+}
+
+.intro-narration {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #e0e0e0;
+}
+
+.intro-highlight {
+  color: #ffe066;
+  font-weight: bold;
+}
+
+.intro-quote {
+  color: #ff3e3e;
+  font-style: italic;
+  margin-left: 1.2rem;
+  display: block;
+}
+
+.intro-btn {
+  display: block;
+  margin: 0 auto;
+  background: #ff3e3e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.8rem 2.2rem;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px #000a;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.intro-btn:hover {
+  background: #ffe066;
+  color: #22223b;
+  transform: scale(1.06);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
