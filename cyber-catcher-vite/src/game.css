@@ -48,19 +48,45 @@ body {
 }
 
 .game-board {
-  background: #23b14d;
-  border-radius: 8px;
+  background: #182a3f; /* Lighter cyber blue for more contrast */
+  border-radius: 18px;
   margin: 0 auto;
   height: 450px;
   width: 600px;
   position: relative;
-  box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+  box-shadow: 0 4px 32px 0 #00f0ff33, 0 0 0 4px #00f0ff44 inset;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-bottom: 48px; /* Extra space below holes */
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 32px 4px #00f0ff55, 0 2px 16px rgba(0,0,0,0.18);
 }
+
+.game-board::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    repeating-linear-gradient(90deg, #00f0ff22 0px, #00f0ff22 2px, transparent 2px, transparent 60px),
+    repeating-linear-gradient(0deg, #00f0ff22 0px, #00f0ff22 2px, transparent 2px, transparent 60px);
+  z-index: 0;
+  pointer-events: none;
+  animation: gridGlow 2.5s linear infinite;
+}
+
+@keyframes gridGlow {
+  0% { filter: brightness(1) drop-shadow(0 0 4px #00f0ff88); }
+  50% { filter: brightness(1.2) drop-shadow(0 0 12px #00f0ffcc); }
+  100% { filter: brightness(1) drop-shadow(0 0 4px #00f0ff88); }
+}
+
+.game-content, .game-grid, .hole, .popup {
+  position: relative;
+  z-index: 1;
+}
+
 
 .game-grid {
   display: grid;
@@ -69,7 +95,7 @@ body {
   gap: 30px;
   width: 95%;
   height: 95%;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem; /* Reduce top padding to bring top holes up */
   box-sizing: border-box;
 }
 
@@ -82,6 +108,22 @@ body {
   justify-content: center;
   padding-bottom: 30px; /* Add space at bottom for mole */
 }
+
+.hole-graphic {
+  width: 7rem;
+  height: 1.8rem;
+  background: radial-gradient(ellipse at center, #111 60%, #000 100%);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  opacity: 0.92;
+  z-index: 0;
+  border: 2px solid #00f0ff;
+  box-shadow: 0 0 16px 4px #00f0ff88, 0 0 8px 2px #00f0ff55 inset;
+}
+
 
 .mole {
   position: absolute;
