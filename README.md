@@ -10,7 +10,7 @@ A retro terminal-inspired arcade for educational games!
 - **Cyber Catcher**: A Whack-a-Mole style cybersecurity awareness game.
 - **Flappy Bird**: Classic Flappy Bird clone for arcade fun.
 - **DataStruct Quest**: Solve puzzles and challenges about data structures.
-- **SQL Murder Mystery**: Solve a crime using SQL queries and database logic.
+- **Database Detective**: Solve a crime using SQL queries and database logic.
 
 ## How It Works
 - Launch the terminal interface (`game-terminal`)
