@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flappy Bird</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      background-color: #0d1117;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #e6edf3;
+      font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+    }
+    
+    .container {
+      text-align: center;
+      max-width: 600px;
+      padding: 20px;
+    }
+    
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    
+    .instructions {
+      background-color: #161b22;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    
+    code {
+      display: block;
+      background-color: #0d1117;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      white-space: pre;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #238636;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      padding: 10px 20px;
+      font-family: inherit;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 20px;
+    }
+    
+    .button:hover {
+      background-color: #2ea043;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Flappy Bird Game</h2>
+    <p>To play Flappy Bird, you need to run it on a local server.</p>
+    
+    <div class="instructions">
+      <p>Follow these steps to run Flappy Bird:</p>
+      <code>npm install -g http-server
+cd /Users/vidit/Desktop/hackathon/Flappy-Bird
+http-server -p 8080</code>
+      <p>Then open <a href="http://localhost:8080" target="_blank" style="color: #58a6ff;">http://localhost:8080</a> in your browser.</p>
+    </div>
+    
+    <p>Once the server is running, you can play the game directly in your browser!</p>
+    
+    <a href="http://localhost:8080" target="_blank" class="button">Open Flappy Bird</a>
+  </div>
+</body>
+</html>

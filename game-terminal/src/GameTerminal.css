@@ -1,0 +1,280 @@
+/* Terminal Window Styling */
+.terminal-window {
+  background-color: #0d1117;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  width: 1200px;
+  max-width: 98vw;
+  height: 800px;
+  max-height: 98vh;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  overflow: hidden;
+}
+
+/* Terminal Title Bar */
+.terminal-titlebar {
+  background-color: #161b22;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  user-select: none;
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminal-title {
+  color: #8b949e;
+  font-size: 14px;
+}
+
+/* Terminal Content */
+.terminal-content {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  color: #e6edf3;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Terminal Output */
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 16px;
+}
+
+.command-line {
+  color: #58a6ff;
+  margin-bottom: 4px;
+}
+
+.output-line {
+  color: #e6edf3;
+  margin-bottom: 4px;
+}
+
+/* Game List */
+.game-list {
+  margin: 16px 0;
+}
+
+.list-header {
+  color: #8b949e;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.game-item {
+  display: flex;
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.game-item:hover {
+  background-color: #1f2937;
+}
+
+.game-name {
+  color: #58a6ff;
+  margin-right: 12px;
+  font-weight: bold;
+}
+
+.game-desc {
+  color: #8b949e;
+}
+
+/* Terminal Input */
+.terminal-input-line {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.prompt {
+  color: #58a6ff;
+  margin-right: 8px;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #e6edf3;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+  caret-color: #e6edf3;
+}
+
+/* Game Container */
+.game-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.exit-button {
+  background-color: #21262d;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.exit-button:hover {
+  background-color: #30363d;
+}
+
+.game-title {
+  margin-left: 16px;
+  font-weight: bold;
+  color: #58a6ff;
+}
+
+.game-frame {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #0d1117;
+  border-radius: 4px;
+}
+
+/* Game Frame Container */
+.game-frame-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #161b22;
+  border-radius: 8px;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.full-game {
+  padding: 0;
+}
+
+.game-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.flappy-bird-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-message {
+  text-align: center;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.game-message h3 {
+  color: #58a6ff;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.game-message p {
+  margin-bottom: 20px;
+  color: #8b949e;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.instructions {
+  margin-top: 30px;
+  text-align: left;
+  background-color: #1a1e24;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.note {
+  color: #e6edf3;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.code-block {
+  background-color: #0d1117;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+code {
+  display: block;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+  color: #e6edf3;
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.game-launch-button {
+  display: inline-block;
+  background-color: #238636;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  text-decoration: none;
+  text-align: center;
+}
+
+.game-launch-button:hover {
+  background-color: #2ea043;
+  color: #ffffff;
+  text-decoration: none;
+}
