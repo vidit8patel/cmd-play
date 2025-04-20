@@ -112,17 +112,34 @@ body {
 .hole-graphic {
   width: 7rem;
   height: 1.8rem;
-  background: radial-gradient(ellipse at center, #111 60%, #000 100%);
+  background: radial-gradient(ellipse at center, #222 40%, #000 85%, #000c 100%);
   border-radius: 50%;
   position: absolute;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  opacity: 0.92;
+  opacity: 0.97;
   z-index: 0;
   border: 2px solid #00f0ff;
-  box-shadow: 0 0 16px 4px #00f0ff88, 0 0 8px 2px #00f0ff55 inset;
+  box-shadow:
+    0 0 16px 4px #00f0ff88,
+    0 0 8px 2px #00f0ff55 inset,
+    0 8px 24px 6px #000c inset,
+    0 -4px 8px 0 #3338 inset,
+    0 2px 8px 2px #000a;
+  overflow: hidden;
 }
+
+.hole-graphic::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 0; height: 40%;
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #fff3 50%, transparent 100%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
 
 
 .mole {
