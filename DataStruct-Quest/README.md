@@ -1,4 +1,35 @@
-# cmd-play
+# DataStruct Quest
+
+Solve interactive data structure puzzles and challenges!
+
+## Overview
+DataStruct Quest is a game designed to help players learn and master data structures through interactive puzzles and challenges. Each level presents a unique scenario requiring knowledge of arrays, stacks, queues, trees, and more.
+
+## Gameplay
+- Solve puzzles by selecting or manipulating data structures
+- Progressively harder levels
+- Hints and explanations provided for learning
+- Score and timer to encourage replayability
+
+## Educational Value
+- Teaches fundamental data structure concepts
+- Reinforces problem-solving and algorithmic thinking
+- Suitable for beginners and intermediate learners
+
+## Setup & Running
+1. `cd DataStruct-Quest`
+2. `npm install`
+3. `npm run dev`
+4. Visit [http://localhost:5175](http://localhost:5175)
+
+## Tech Stack
+- React 19
+- TypeScript
+- Vite
+
+## License
+MIT
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

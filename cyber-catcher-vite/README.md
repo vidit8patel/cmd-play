@@ -1,4 +1,38 @@
-# cmd-play
+x# Cyber Catcher
+
+A Whack-a-Mole style cybersecurity awareness game.
+
+## Overview
+Cyber Catcher is an educational game where players identify and "catch" malicious emails, passwords, and URLs. The goal is to teach players how to spot phishing attempts, weak credentials, and suspicious links in a fun, interactive way.
+
+## Gameplay
+- Popups appear on a grid, each representing an email, password, or URL.
+- Some are safe, others are malicious (phishing, weak passwords, etc.).
+- Click on malicious popups to score points.
+- Avoid clicking safe popups to prevent losing strikes.
+- Features a timer, scoreboard, and a limited number of strikes.
+- Blue grid background with a green gameplay area for retro vibes.
+- Mole character appears with each popup for added fun.
+
+## Educational Value
+- Reinforces cybersecurity best practices
+- Teaches players to evaluate content, not just rely on color cues
+- Includes a variety of real-world inspired examples
+
+## Setup & Running
+1. `cd cyber-catcher-vite`
+2. `npm install`
+3. `npm run dev`
+4. Visit [http://localhost:5174](http://localhost:5174)
+
+## Tech Stack
+- React 19
+- TypeScript
+- Vite
+
+## License
+MIT
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

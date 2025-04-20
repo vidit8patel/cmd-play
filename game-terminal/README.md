@@ -1,4 +1,41 @@
-# cmd-play
+# cmd-play Terminal
+
+A retro terminal-style launcher for educational games.
+
+## Overview
+The cmd-play Terminal is a React-based launcher that mimics a classic command-line interface. It allows users to browse, launch, and manage educational games from a single hub.
+
+## Features
+- Terminal-like UI with command input
+- List and launch games with commands
+- Game descriptions and launch buttons
+- Easily extensible to add new games
+
+## Usage
+1. `cd game-terminal`
+2. `npm install`
+3. `npm run dev`
+4. Visit [http://localhost:5173](http://localhost:5173)
+
+## Commands
+- `play [game name]`: Launch a game
+- `list`: Show available games
+- `clear`: Clear terminal output
+- `exit`: Exit current game
+- `help`: Show help message
+
+## Adding New Games
+- Edit the `games` array in `GameTerminal.tsx` to add new games
+- Update paths and descriptions as needed
+
+## Tech Stack
+- React 19
+- TypeScript
+- Vite
+
+## License
+MIT
+
 
 A terminal-style game launcher for educational games. Project name: cmd-play.
 

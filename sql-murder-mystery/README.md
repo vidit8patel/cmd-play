@@ -1,4 +1,34 @@
-# cmd-play
+# SQL Murder Mystery
+
+Solve a murder mystery using SQL queries!
+
+## Overview
+SQL Murder Mystery is an interactive game where players use SQL queries to solve a fictional crime. Explore a simulated database, uncover clues, and catch the culprit!
+
+## Gameplay
+- Interact with a database of suspects, evidence, and locations
+- Write SQL queries to find clues and progress through the story
+- Hints and story-driven progression
+
+## Educational Value
+- Teaches practical SQL skills
+- Reinforces database concepts and query logic
+- Fun, story-based learning
+
+## Setup & Running
+1. `cd sql-murder-mystery`
+2. `npm install`
+3. `npm run dev`
+4. Visit [http://localhost:5176](http://localhost:5176)
+
+## Tech Stack
+- React
+- Vite
+- Node.js (for backend)
+
+## License
+MIT
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
