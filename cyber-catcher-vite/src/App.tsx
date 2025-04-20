@@ -206,7 +206,7 @@ const App: React.FC = () => {
       <div className="grid-background"></div>
       
       <div className="game-content">
-        <h1 className="game-title">CYBER CATCHER</h1>
+        <h1 className="game-title">Whack-a-Hack</h1>
         
         <div className="game-board">
           <div className="game-grid">
