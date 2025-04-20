@@ -13,25 +13,25 @@ const games: Game[] = [
     id: 'cybercatcher',
     name: 'Whack-a-Hack',
     description: 'Spot and stop cyber threats in this fast-paced Whack-a-Mole game.',
-    path: '/cyber-catcher'
+    path: 'http://localhost:5174'
   },
   {
     id: 'flappybird',
     name: 'Flappy Bird',
     description: 'Learn CS coding concepts on the fly!',
-    path: '/flappybird'
+    path: 'http://localhost:8080'
   },
   {
     id: 'datastructquest',
     name: 'DataStruct Quest',
     description: 'Solve interactive data structure puzzles and challenges!',
-    path: '/datastruct-quest'
+    path: 'http://localhost:5175'
   },
   {
     id: 'sqlmurder',
     name: 'Database Detective',
     description: 'Solve a murder mystery using SQL queries! Interact with a simulated database and uncover clues.',
-    path: '/sql-murder-mystery'
+    path: 'http://localhost:5176'
   }
 ];
 

@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/cyber-catcher/(.*)", "destination": "/cyber-catcher-vite/dist/$1" },
-    { "source": "/datastruct-quest/(.*)", "destination": "/DataStruct-Quest/dist/$1" },
-    { "source": "/sql-murder-mystery/(.*)", "destination": "/sql-murder-mystery/$1" },
-    { "source": "/(.*)", "destination": "/game-terminal/dist/$1" }
-  ]
-}
