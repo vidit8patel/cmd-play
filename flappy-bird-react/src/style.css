@@ -1,0 +1,11 @@
+body {
+  background: #70c5ce;
+  margin: 0;
+  font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  background: #70c5ce;
+}
