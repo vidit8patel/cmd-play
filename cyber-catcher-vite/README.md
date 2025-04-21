@@ -1,4 +1,4 @@
-x# Cyber Catcher
+# Cyber Catcher
 
 A Whack-a-Mole style cybersecurity awareness game.
 
